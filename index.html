@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B8A3-fruit-brust</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+  </head>
+</head>
+<body>
+    <nav class="container mx-auto bg-pink-600 rounded-full p-4 mt-4">
+      <div class=" flex items-center justify-between">
+        <!-- Your brand/logo goes here -->
+        <ul class="hidden lg:flex gap-5 xl:gap-8 text-lg text-gray-100 font-bold">
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Shop</li>
+          <li>All fruits</li>
+        </ul>
+
+        <div class="flex items-center gap-2">
+          <img width="40px" src="/images/logo/logo.png" alt="" />
+          <h2 class="text-2xl font-bold text-gray-100">Fruit Burst</h2>
+        </div>
+        <!-- Search bar goes here -->
+        <div class="hidden md:flex items-center">
+          <div class="relative">
+            <input
+              type="text"
+              class="px-4 py-2 pr-10 rounded-full text-gray-800 focus:outline-none"
+              placeholder="Search here"
+            />
+            <div class="absolute top-0 right-0 h-full flex items-center pr-3">
+              <svg
+                class="w-6 h-6 text-gray-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M20 20L15 15M17 10a7 7 0 10-14 0 7 7 0 0014 0z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          
+        </div>
+      </div>
+    </nav>
+<!-- component -->
+<!-- This is an example component -->
+<div class="container mx-auto mt-4 xl:mt-0">
+
+	<div id="default-carousel" class="relative" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-[80vh]">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out xl:absolute bottom-28 " data-carousel-item>
+                <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
+                <img src="images/banner/banner1.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out xl:absolute bottom-28" data-carousel-item>
+                <img src="images/banner/banner2.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out xl:absolute bottom-28" data-carousel-item>
+                <img src="images/banner/banner3.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out xl:absolute bottom-28" data-carousel-item>
+                <img src="images/banner/banner4.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+            </div>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                <span class="hidden">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span class="hidden">Next</span>
+            </span>
+        </button>
+    </div>
+</div>
+  </body>
+</html>
